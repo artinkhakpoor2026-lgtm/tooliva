@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TOOLIVA | ابزارهای آنلاین</title>
+
+    <meta name="description" content="TOOLIVA مجموعه‌ای از ابزارهای کاربردی آنلاین، سریع و رایگان">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="background">
+    <div class="orb orb-one"></div>
+    <div class="orb orb-two"></div>
+    <div class="grid-bg"></div>
+</div>
+
+<header class="header">
+    <div class="container nav">
+
+        <a href="#" class="logo">
+            <span class="logo-icon">✦</span>
+            <span>TOOL<span>IVA</span></span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="#tools">ابزارها</a>
+            <a href="#categories">دسته‌بندی</a>
+            <a href="#about">درباره</a>
+        </nav>
+
+        <button class="mobile-menu" id="mobileMenu">☰</button>
+
+    </div>
+</header>
+
+
+<main>
+
+<section class="hero">
+    <div class="container hero-content">
+
+        <div class="hero-badge">
+            <span class="pulse"></span>
+            بیش از ۳۰ ابزار کاربردی و رایگان
+        </div>
+
+        <h1>
+            ابزارهای مورد نیازت
+            <br>
+            <span>همین‌جا آماده‌ان</span>
+        </h1>
+
+        <p>
+            TOOLIVA مجموعه‌ای از ابزارهای سریع و کاربردی برای
+            متن، محاسبات، تبدیل واحد، برنامه‌نویسی و کارهای روزمره است.
+        </p>
+
+        <div class="hero-search">
+            <span>⌕</span>
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="چه ابزاری لازم داری؟ مثلاً ماشین حساب..."
+                autocomplete="off"
+            >
+            <kbd>Ctrl K</kbd>
+        </div>
+
+        <div class="hero-stats">
+            <div>
+                <strong id="toolCount">36+</strong>
+                <span>ابزار کاربردی</span>
+            </div>
+
+            <div class="stat-line"></div>
+
+            <div>
+                <strong>100%</strong>
+                <span>رایگان</span>
+            </div>
+
+            <div class="stat-line"></div>
+
+            <div>
+                <strong>⚡</strong>
+                <span>سریع و ساده</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="categories-section" id="categories">
+    <div class="container">
+
+        <div class="section-title">
+            <div>
+                <span class="eyebrow">EXPLORE</span>
+                <h2>دسته‌بندی ابزارها</h2>
+            </div>
+        </div>
+
+        <div class="categories">
+
+            <button class="category active" data-category="all">
+                <span>✦</span>
+                همه
+            </button>
+
+            <button class="category" data-category="text">
+                <span>Aa</span>
+                متن
+            </button>
+
+            <button class="category" data-category="math">
+                <span>∑</span>
+                محاسبات
+            </button>
+
+            <button class="category" data-category="convert">
+                <span>⇄</span>
+                تبدیل
+            </button>
+
+            <button class="category" data-category="developer">
+                <span>&lt;/&gt;</span>
+                برنامه‌نویسی
+            </button>
+
+            <button class="category" data-category="security">
+                <span>♢</span>
+                امنیت
+            </button>
+
+            <button class="category" data-category="date">
+                <span>◷</span>
+                زمان و تاریخ
+            </button>
+
+            <button class="category" data-category="image">
+                <span>▧</span>
+                تصویر
+            </button>
+
+        </div>
+
+    </div>
+</section>
+
+
+<section class="tools-section" id="tools">
+
+<div class="container">
+
+    <div class="section-heading">
+        <div>
+            <span class="eyebrow">TOOLBOX</span>
+            <h2>ابزارهای TOOLIVA</h2>
+        </div>
+
+        <span class="result-count" id="resultCount">36 ابزار</span>
+    </div>
+
+
+    <div class="tools-grid" id="toolsGrid">
+
+        <!-- TEXT -->
+
+        <article class="tool-card" data-category="text" data-search="شمارش کلمات حروف متن word character">
+            <div class="card-top">
+                <div class="tool-icon cyan">Aa</div>
+                <span class="tool-arrow">↗</span>
+            </div>
+            <h3>شمارش متن</h3>
+            <p>تعداد کلمات، حروف و خطوط متن را محاسبه کن.</p>
+            <span class="tag">متن</span>
+        </article>
+
+        <article class="tool-card" data-category="text" data-search="تبدیل حروف بزرگ کوچک uppercase lowercase">
+            <div class="card-top">
+                <div class="tool-icon purple">Aa</div>
+                <span class="tool-arrow">↗</span>
+            </div>
+            <h3>تبدیل حروف</h3>
+            <p>حروف متن را به بزرگ یا کوچک تبدیل کن.</p>
+            <span class="tag">متن</span>
+        </article>
+
+        <article class="tool-card" data-category="text" data-search="پاکسازی متن فاصله اضافی clean text">
+            <div class="card-top">
+                <div class="tool-icon pink">✧</div>
+                <span class="tool-arrow">↗</span>
+            </div>
+            <h3>پاکسازی متن</h3>
+            <p>فاصله‌های اضافه و خطوط خالی را حذف کن.</p>
+            <span class="tag">متن</span>
+        </article>
+
+        <article class="tool-card" data-category="text" data-search="حذف خطوط تکراری duplicate lines">
+            <div class="card-top">
+                <div class="tool-icon green">≡</div>
+                <span class="tool-arrow">↗</span>
+            </div>
+            <h3>حذف خطوط تکراری</h3>
+            <p>خطوط تکراری متن را به‌صورت خودکار حذف کن.</p>
+            <span class="tag">متن</span>
+        </article>
+
+        <article class="tool-card" data-category="text" data-search="برعکس کردن متن reverse">
+            <div class="card-top">
+                <div class="tool-icon orange">↔</div>
+                <span class="tool-arrow">↗</span>
+            </div>
+            <h3>برعکس کردن متن</h3>
+            <p>ترتیب حروف متن را معکوس کن.</p>
+            <span class="tag">متن</span>
+        </article>
+
+        <article class="tool-card" data-category="text" data-search="لورم ایپسوم lorem ipsum">
+            <div class="card-top">
+                <div class="tool-icon blue">¶</div>
+                <span class="tool-arrow">↗</span>
+            </div>
+            <h3>Lorem Ipsum</h3>
+            <p>متن نمونه برای طراحی سایت و پروژه تولید کن.</p>
+            <span class="tag">متن</span>
+        </article>
+
+
+        <!-- MATH -->
+
+        <article class="tool-card" data-category="math" data-search="ماشین حساب calculator">
+            <div class="card-top">
+                <div class="tool-icon cyan">＋</div>
+                <span class="tool-arrow">↗</span>
+            </div>
+            <h3>ماشین حساب</h3>
+            <p>محاسبات ریاضی را سریع انجام بده.</p>
+            <span class="tag">محاسبات</span>
+        </article>
+
+        <article class="tool-card" data-category="math" data-search="درصد percentage percent">
+            <div class="card-top">
+                <div class="tool-icon purple">%</div>
+                <span class="tool-arrow">↗</span>
+            </div>
+            <h3>محاسبه درصد</h3>
+            <p>درصد یک عدد را به‌سادگی حساب کن.</p>
+            <span class="tag">محاسبات</span>
+        </article>
+
+        <article class="tool-card" data-category="math" data-search="تخفیف discount">
+            <div class="card-top">
+                <div class="tool-icon pink">٪</div>
+                <span class="tool-arrow">↗</span>
+            </div>
+            <h3>محاسبه تخفیف</h3>
+            <p>قیمت نهایی کالا بعد از تخفیف را پیدا کن.</p>
+            <span class="tag">محاسبات</span>
+        </article>
+
+        <article class="tool-card" data-category="math" data-search="میانگین average">
+            <div class="card-top">
+                <div class="tool-icon green">Σ</div>
+                <span class="tool-arrow">↗</span>
+            </div>
+            <h3>میانگین</h3>
+            <p>میانگین چند عدد را حساب کن.</p>
+            <span class="tag">محاسبات</span>
+        </article>
+
+        <article class="tool-card" data-category="math" data-search="BMI شاخص توده بدنی">
+            <div class="card-top">
+                <div class="tool-icon orange">⚖</div>
+                <span class="tool-arrow">↗</span>
+            </div>
+            <h3>BMI</h3>
+            <p>شاخص توده بدنی را محاسبه کن.</p>
+            <span class="tag">محاسبات</span>
+        </article>
+
+        <article class="tool-card" data-category="math" data-search="عدد تصادفی random number">
+            <div class="card-top">
+                <div class="tool-icon blue">?</div>
+                <span class="tool-arrow">↗</span>
+            </div>
+            <h3>عدد تصادفی</h3>
+            <p>بین دو عدد، یک عدد تصادفی بساز.</p>
+            <span class="tag">محاسبات</span>
+        </article>
+
+
+        <!-- CONVERT -->
+
+        <article class="tool-card" data-category="convert" data-search="تبدیل طول متر کیلومتر سانتی متر">
+            <div class="card-top">
+                <div class="tool-icon cyan">↔</div>
+                <span class="tool-arrow">↗</span>
+            </div>
+            <h3>تبدیل طول</h3>
+            <p>متر، کیلومتر، سانتی‌متر و واحدهای دیگر.</p>
+            <span class="tag">تبدیل</span>
+        </article>
+
+        <article class="tool-card" data-category="convert" data-search="وزن کیلوگرم گرم پوند">
+            <div class="card-top">
+                <div class="tool-icon purple">kg</div>
+                <span class="tool-arrow">↗</span>
+            </div>
+            <h3>تبدیل وزن</h3>
+            <p>کیلوگرم، گرم، پوند و اونس.</p>
+            <span class="tag">تبدیل</span>
+        </article>
+
+        <article class="tool-card" data-category="convert" data-search="دما سانتی گراد فارنهایت کلوین">
+            <div class="card-top">
+                <div class="tool-icon pink">℃</div>
+                <span class="tool-arrow">↗</span>
+            </div>
+            <h3>تبدیل دما</h3>
+            <p>سانتی‌گراد، فارنهایت و کلوین.</p>
+            <span class="tag">تبدیل</span>
+        </article>
+
+        <article class="tool-card" data-category="convert" data-search="سرعت کیلومتر ساعت مایل">
+            <div class="card-top">
+                <div class="tool-icon green">⚡</div>
+                <span class="tool-arrow">↗</span>
+            </div>
+            <h3>تبدیل سرعت</h3>
+            <p>کیلومتر بر ساعت، متر بر ثانیه و مایل.</p>
+            <span class="tag">تبدیل</span>
+        </article>
+
+        <article class="tool-card" data-category="convert" data-search="مساحت متر مربع کیلومتر مربع">
+            <div class="card-top">
+                <div class="tool-icon orange">▦</div>
+                <span class="tool-arrow">↗</span>
+            </div>
+            <h3>تبدیل مساحت</h3>
+            <p>واحدهای مختلف مساحت را تبدیل کن.</p>
+            <span class="tag">تبدیل</span>
+        </article>
+
+        <article class="tool-card" data-category="convert" data-search="حجم لیتر میلی لیتر">
+            <div class="card-top">
+                <div class="tool-icon blue">◉</div>
+                <span class="tool-arrow">↗</span>
+            </div>
+            <h3>تبدیل حجم</h3>
+            <p>لیتر، میلی‌لیتر و متر مکعب.</p>
+            <span class="tag">تبدیل</span>
+        </article>
+
+
+        <!-- DEVELOPER -->
+
+        <article class="tool-card" data-category="developer" data-search="JSON فرمت json formatter">
+            <div class="card-top">
+                <div class="tool-icon cyan">{ }</div>
+                <span class="tool-arrow">↗</span>
+            </div>
+            <h3>JSON Formatter</h3>
+            <p>کد JSON را مرتب و خوانا کن.</p>
+            <span class="tag">برنامه‌نویسی</span>
+        </article>
+
+        <article class="tool-card" data-category="developer" data-search="Base64 encode decode">
+            <div class="card-top">
+                <div class="tool-icon purple">64</div>
+                <span class="tool-arrow">↗</span>
+            </div>
+            <h3>Base64</h3>
+            <p>متن را Encode یا Decode کن.</p>
+            <span class="tag">برنامه‌نویسی</span>
+        </article>
+
+        <article class="tool-card" data-category="developer" data-search="URL encode decode">
+            <div class="card-top">
+                <div class="tool-icon pink">URL</div>
+                <span class="tool-arrow">↗</span>
+            </div>
+            <h3>URL Encoder</h3>
+            <p>متن URL را Encode یا Decode کن.</p>
+            <span class="tag">برنامه‌نویسی</span>
+        </article>
+
+        <article class="tool-card" data-category="developer" data-search="HTML escape unescape">
+            <div class="card-top">
+                <div class="tool-icon green">&lt;/&gt;</div>
+                <span class="tool-arrow">↗</span>
+            </div>
+            <h3>HTML Escape</h3>
+            <p>کاراکترهای HTML را تبدیل کن.</p>
+            <span class="tag">برنامه‌نویسی</span>
+        </article>
+
+        <article class="tool-card" data-category="developer" data-search="UUID تولید uuid generator">
+            <div class="card-top">
+                <div class="tool-icon orange">ID</div>
+                <span class="tool-arrow">↗</span>
+            </div>
+            <h3>UUID Generator</h3>
+            <p>یک UUID تصادفی و استاندارد بساز.</p>
+            <span class="tag">برنامه‌نویسی</span>
+        </article>
+
+        <article class="tool-card" data-category="developer" data-search="timestamp زمان یونیکس">
+            <div class="card-top">
+                <div class="tool-icon blue">#</div>
+                <span class="tool-arrow">↗</span>
+            </div>
+            <h3>Unix Timestamp</h3>
+            <p>زمان فعلی را به Unix Timestamp تبدیل کن.</p>
+            <span class="tag">برنامه‌نویسی</span>
+        </article>
+
+
+        <!-- SECURITY -->
+
+        <article class="tool-card" data-category="security" data-search="رمز عبور password generator">
+            <div class="card-top">
+                <div class="tool-icon cyan">♢</div>
+                <span class="tool-arrow">↗</span>
+            </div>
+            <h3>ساخت رمز عبور</h3>
+            <p>رمز عبور تصادفی و قوی تولید کن.</p>
+            <span class="tag">امنیت</span>
+        </article>
+
+        <article class="tool-card" data-category="security" data-search="قدرت رمز password strength">
+            <div class="card-top">
+                <div class="tool-icon purple">✓</div>
+                <span class="tool-arrow">↗</span>
+            </div>
+            <h3>قدرت رمز عبور</h3>
+            <p>قدرت یک رمز عبور را بررسی کن.</p>
+            <span class="tag">امنیت</span>
+        </article>
+
+        <article class="tool-card" data-category="security" data-search="SHA256 hash هش">
+            <div class="card-top">
+                <div class="tool-icon pink">#</div>
+                <span class="tool-arrow">↗</span>
+            </div>
+            <h3>SHA-256</h3>
+            <p>از متن خود SHA-256 Hash بساز.</p>
+            <span class="tag">امنیت</span>
+        </article>
+
+
+        <!-- DATE -->
+
+        <article class="tool-card" data-category="date" data-search="ساعت زمان clock">
+            <div class="card-top">
+                <div class="tool-icon cyan">◷</div>
+                <span class="tool-arrow">↗</span>
+            </div>
+            <h3>ساعت آنلاین</h3>
+            <p>ساعت دقیق سیستم را مشاهده کن.</p>
+            <span class="tag">زمان</span>
+        </article>
+
+        <article class="tool-card" data-category="date" data-search="کرنومتر stopwatch">
+            <div class="card-top">
+                <div class="tool-icon purple">⏱</div>
+                <span class="tool-arrow">↗</span>
+            </div>
+            <h3>کرنومتر</h3>
+            <p>زمان را با دقت اندازه‌گیری کن.</p>
+            <span class="tag">زمان</span>
+        </article>
+
+        <article class="tool-card" data-category="date" data-search="تایمر timer">
+            <div class="card-top">
+                <div class="tool-icon pink">◴</div>
+                <span class="tool-arrow">↗</span>
+            </div>
+            <h3>تایمر</h3>
+            <p>یک شمارش معکوس تنظیم کن.</p>
+            <span class="tag">زمان</span>
+        </article>
+
+        <article class="tool-card" data-category="date" data-search="سن age calculator">
+            <div class="card-top">
+                <div class="tool-icon green">🎂</div>
+                <span class="tool-arrow">↗</span>
+            </div>
+            <h3>محاسبه سن</h3>
+            <p>سن خود را بر اساس تاریخ تولد حساب کن.</p>
+            <span class="tag">زمان</span>
+        </article>
+
+
+        <!-- IMAGE -->
+
+        <article class="tool-card" data-category="image" data-search="تغییر اندازه تصویر resize image">
+            <div class="card-top">
+                <div class="tool-icon cyan">▧</div>
+                <span class="tool-arrow">↗</span>
+            </div>
+            <h3>تغییر اندازه تصویر</h3>
+            <p>عرض و ارتفاع عکس را تغییر بده.</p>
+            <span class="tag">تصویر</span>
+        </article>
+
+        <article class="tool-card" data-category="image" data-search="فشرده سازی عکس compress image">
+            <div class="card-top">
+                <div class="tool-icon purple">◇</div>
+                <span class="tool-arrow">↗</span>
+            </div>
+            <h3>فشرده‌سازی تصویر</h3>
+            <p>حجم عکس را بدون نصب برنامه کاهش بده.</p>
+            <span class="tag">تصویر</span>
+        </article>
+
+        <article class="tool-card" data-category="image" data-search="تصویر data url">
+            <div class="card-top">
+                <div class="tool-icon pink">IMG</div>
+                <span class="tool-arrow">↗</span>
+            </div>
+            <h3>Image Data URL</h3>
+            <p>تصویر را به Data URL تبدیل کن.</p>
+            <span class="tag">تصویر</span>
+        </article>
+
+    </div>
+
+    <div class="no-results" id="noResults">
+        <div>⌕</div>
+        <h3>ابزاری پیدا نشد</h3>
+        <p>نام ابزار یا دسته‌بندی دیگری را امتحان کن.</p>
+    </div>
+
+</div>
+</section>
+
+
+<section class="about" id="about">
+    <div class="container">
+
+        <div class="about-box">
+
+            <div class="about-glow"></div>
+
+            <div class="about-content">
+                <span class="eyebrow">WHY TOOLIVA?</span>
+
+                <h2>
+                    همه ابزارهای کاربردی،
+                    <span>در یک جا.</span>
+                </h2>
+
+                <p>
+                    بدون نصب برنامه‌های اضافی، بدون پیچیدگی و با طراحی ساده.
+                    TOOLIVA برای کارهای روزمره، درس، برنامه‌نویسی و پروژه‌ها ساخته شده است.
+                </p>
+
+                <div class="about-points">
+                    <span>✓ رایگان</span>
+                    <span>✓ سریع</span>
+                    <span>✓ ساده</span>
+                    <span>✓ بدون ثبت‌نام</span>
+                </div>
+            </div>
+
+            <div class="about-symbol">
+                ✦
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+
+<footer>
+    <div class="container footer-content">
+
+        <div class="footer-logo">
+            <span>✦</span> TOOLIVA
+        </div>
+
+        <p>
+            ابزارهای کوچک برای کارهای بزرگ.
+        </p>
+
+        <span class="copyright">
+            © 2026 TOOLIVA
+        </span>
+
+    </div>
+</footer>
+
+
+<!-- MODAL -->
+
+<div class="modal-overlay" id="modal">
+
+    <div class="modal">
+
+        <button class="modal-close" id="modalClose">×</button>
+
+        <div class="modal-header">
+            <div class="modal-icon" id="modalIcon">✦</div>
+
+            <div>
+                <span class="modal-category" id="modalCategory">ابزار</span>
+                <h2 id="modalTitle">ابزار</h2>
+            </div>
+        </div>
+
+        <div id="toolContent"></div>
+
+    </div>
+
+</div>
+
+
+<div class="toast" id="toast">
+    <span>✓</span>
+    <p>انجام شد</p>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
